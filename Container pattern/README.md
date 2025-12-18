@@ -1,16 +1,15 @@
-# React + Vite
+# Container-Presenter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Container Component
+Manages the component's state, data fetching (e.g., API calls), and any business logic.
 
-Currently, two official plugins are available:
+Presenter Component
+Solely concerned with how the UI looks and receives data and callbacks as props from its parent (usually a Container component).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Typically a functional component, often stateless, and primarily focused on rendering the UI based on the props it receives. It should not contain any business logic or data-fetching concerns.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Benefits
+Separation of Concerns
+Improved Reusability
+Simplified Testing
+Enhanced Maintainability
