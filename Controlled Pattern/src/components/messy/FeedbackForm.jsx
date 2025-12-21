@@ -35,11 +35,21 @@ export default function FeedbackForm() {
         onChange={(e) => setName(e.target.value)}
         placeholder="Name"
       />
-      <input className="border rounded-2xl p-2 my-3"
-      type="email"
-      value={email}
-      onChange={(e)=> setEmail(e.target.value)}
-      placeholder="email"/>
+      <input
+        className="border rounded-2xl p-2 my-3"
+        type="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        placeholder="email"
+      />
+      <textarea
+        className="border rounded-2xl p-2 my-3"
+        ref={messageRef}
+        placeholder="Your message"
+      />
+      <button className="bg-purple-500 text-white p-1 rounded" type="submit">
+        Sent Feedback
+      </button>
     </form>
   );
 }
