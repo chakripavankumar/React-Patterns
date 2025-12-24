@@ -1,8 +1,3 @@
-# React + Vite
+# Notes on Controlled vs Uncontrolled Components in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A controlled component is one where React controls the form input through state, making it suitable for validation and dynamic UI updates. An uncontrolled component lets the DOM manage the input state, and React accesses the value via refs when needed. Controlled components are preferred for complex forms, while uncontrolled components are useful for simple or performance-sensitive cases.
